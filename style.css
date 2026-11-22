@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* textos */
 
 h1{
@@ -216,4 +217,224 @@ body.souza{
     text-align: center;
     margin-top: 8px;
     color: white;
+=======
+/* textos */
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* links */
+
+button{
+    background-color: white;
+    border: none;
+    border-color: white;
+    cursor: pointer;
+}
+
+/* membros */
+
+.membros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.foto p{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+/* footer */
+
+/* footer sempre no fim da página (só vale no index, que é o único com footer) */
+body:has(> footer){
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 5rem; /* espaço pro footer não cobrir o conteúdo */
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* ===== Página do Souza (Souza.html, <body class="souza">) ===== */
+/* Tudo começa com .souza para não afetar o index.html */
+
+.souza *, .souza *::before, .souza *::after{
+    box-sizing: border-box;
+}
+
+body.souza{
+    margin: 0;
+}
+
+/* barra de navegação fixa no topo */
+
+.souza nav{
+    background-color: rgb(248, 246, 246);
+    padding: 10px;
+    position: fixed;
+    top: 2px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.souza nav a{
+    text-decoration: none;
+    color: #036bba;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+/* textos */
+
+.souza p, .souza h2, .souza li, .souza h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.souza h2{
+    font-size: large;
+}
+
+.souza header{
+    padding-top: 40px;
+}
+
+/* foto principal */
+
+.souza .fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.souza .foto img{
+    width: 250px;
+    height: 250px;
+}
+
+/* curiosidades (lista com bordas, como o list-group do Bootstrap) */
+
+.souza .container{
+    width: 100%;
+    max-width: 720px;
+    margin: 48px auto;
+    padding: 0 12px;
+}
+
+.souza .curiosidades{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+}
+
+.souza .curiosidades li{
+    padding: 8px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    background-color: #fff;
+}
+
+.souza .curiosidades li + li{
+    border-top-width: 0;
+}
+
+.souza .curiosidades li:first-child{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.souza .curiosidades li:last-child{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* lugares (cartão azul com fotos redondas) */
+
+.souza .lugares{
+    background-color: rgb(53, 101, 245);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 40px;
+}
+
+.souza .foto2{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.souza .foto2 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.souza .foto2 h3{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+    color: white;
+>>>>>>> 6a5635522d7b2f1c96fe22817fbedc7c7a0f5686
 }
